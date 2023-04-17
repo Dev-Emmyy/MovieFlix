@@ -43,8 +43,8 @@ function Navbar(){
 
             <div className="color_mode" onClick={() => setToggle(!toggle)}>
                             <h3>{toggle? "DarkMode" : "WhiteMode"}</h3>
-                              <BiMoon fontSize={23}  color="#fff"  className={toggle?  "display" : "noDisplay"}/>
-                             <BsCloudSun fontSize={23}  color="#fff"  className={toggle? "noDisplay" :   "display"}/>
+                              <BiMoon fontSize={23} id="mode" color="#fff"  className={toggle?  "display" : "noDisplay"}/>
+                             <BsCloudSun fontSize={23} id="mode"  color="#fff"  className={toggle? "noDisplay" :   "display"}/>
                         </div>
         </nav>
 

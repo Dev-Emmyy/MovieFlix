@@ -89,3 +89,87 @@ nav a {
     text-decoration: none;
 }
 
+@media screen and (max-width : 789px) {
+    html,body {
+        overflow-x: hidden;
+    }
+    .nav {
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1rem;
+        }
+    
+        .nav_options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 45%;
+        }
+
+        .nav_options h1 {
+            font-size: .8rem;
+        }
+    
+        nav span {
+            font-size: .5rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin: 1rem 0rem;
+        }
+    
+        nav span:hover {
+            color: #fff;
+            border-bottom: 2px solid #ee9800;
+            padding-bottom: 5px;
+        }
+    
+        .color_mode {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            width: 120px;
+        }
+
+        .color_mode h3 {
+            font-size: .7rem;
+            width: 0px;
+        }
+
+        #mode {
+            font-size: 12px;
+            display: none;
+        }
+
+        .input_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 10%;
+            position: relative;
+        }
+
+        .search {
+            display: none;
+        }
+
+        .input_section input {
+            border: none;
+            outline: none;
+            padding: .3rem;
+            width: 110px;
+            border-radius: 1rem;
+        }
+
+        #search {
+            position: relative;
+        }
+
+       
+      
+
+}
+

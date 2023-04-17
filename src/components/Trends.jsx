@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 function Trends(){
     const {toggle,inputValue} = useContext(Container)
     const [trendsData,setTrendsData] = useState([])
-
     const input = inputValue
     const Shown = input? "search" : "trending"
     const Api = `https://api.themoviedb.org/3/${Shown}/all/day`

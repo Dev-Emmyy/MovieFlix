@@ -72,7 +72,7 @@ function handleSearch() {
     return (
       <Fragment>
             <div id="secondaryColor" >
-              <div id="bg_image" style={{backgroundImage : `url(${backgroundStyle})`,backgroundSize:'cover',backgroundRepeat: 'no-repeat',height: '900px',backgroundPosition : 'left calc((50vw - 170px) - 340px) top,}'}}>
+              <div id="bg_image" style={{backgroundImage : `url(${backgroundStyle})`,backgroundSize:'cover',backgroundRepeat: 'no-repeat',height: '1000px',backgroundPosition : 'left calc((50vw - 170px) - 340px) top,}'}}>
              <div id="details_container">
                 <img src={moviesDetails? `${Images}${moviesDetails.poster_path}` : Noimg} />
                 <div id="container_content">
@@ -92,8 +92,8 @@ function handleSearch() {
                         <h3 id="collections_two">{moviesDetails? moviesDetails.production_countries[0].name: ""} </h3>
                      </div>
 
-                     <div id="trailer">
-                      <ReactPlayer url={`https://www.youtube.com/watch?v=${videoURL[0]?.key}`} controls={true} style={{ margin: '1rem 0'}}/>
+                     <div className="trailer">
+                      <ReactPlayer width="100%"  height="300px"  url={`https://www.youtube.com/watch?v=${videoURL[0]?.key}`} controls={true} style={{margin: '2rem 0rem'}} />
                      </div>
                 </div>
             </div>
